@@ -46,40 +46,70 @@ MySQL Database (clinic_db) — patients, doctors, appointments tables
 
 ---
 
-## Folder Structure
-
 patient-booking-console/
+
 ├── src/
-│ └── com/clinic/booking/
-│ ├── model/
-│ │ ├── AppointmentStatus.java
-│ │ ├── Patient.java
-│ │ ├── Doctor.java
-│ │ └── Appointment.java
-│ ├── dao/
-│ │ ├── PatientDao.java
-│ │ ├── DoctorDao.java
-│ │ └── AppointmentDao.java
-│ ├── dao/jdbc/
-│ │ ├── JdbcPatientDao.java
-│ │ ├── JdbcDoctorDao.java
-│ │ └── JdbcAppointmentDao.java
-│ ├── service/
-│ │ ├── ConnectionManager.java
-│ │ └── AppointmentService.java
-│ └── ui/
-│ └── Main.java
+
+│   └── com/clinic/booking/
+
+│       ├── model/
+
+│       │   ├── Patient.java
+
+│       │   ├── Doctor.java
+
+│       │   ├── Appointment.java
+
+│       │   └── AppointmentStatus.java
+
+│       ├── dao/
+
+│       │   ├── PatientDao.java
+
+│       │   ├── DoctorDao.java
+
+│       │   └── AppointmentDao.java
+
+│       ├── dao/jdbc/
+
+│       │   ├── JdbcPatientDao.java
+
+│       │   ├── JdbcDoctorDao.java
+
+│       │   └── JdbcAppointmentDao.java
+
+│       ├── service/
+
+│       │   ├── ConnectionManager.java
+
+│       │   └── AppointmentService.java
+
+│       └── ui/
+
+│           └── Main.java
+
 ├── lib/
-│ └── mysql-connector-j-9.7.0.jar
-├── bin/ (compiled classes - git ignored)
+
+│   └── mysql-connector-j-9.7.0.jar
+
+├── bin/                          ← compiled classes (git ignored)
+
 ├── config/
-│ ├── db.properties (git ignored - contains credentials)
-│ └── db.properties.example (safe to share)
+
+│   ├── db.properties             ← credentials (git ignored)
+
+│   └── db.properties.example
+
 ├── sql/
-│ └── schema.sql
+
+│   └── schema.sql
+
 ├── .vscode/
-│ └── settings.json
+
+│   └── settings.json
+
 ├── .gitignore
+
 └── README.md
 
 
